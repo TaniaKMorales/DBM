@@ -3,14 +3,14 @@
   box-sizing: border-box;
   margin: 0;
 }
-
-html, body {
+/*Estilo para el cuerpo del documento*/
+html,body{
   background: gray;
   height: 100%;
   overflow: hidden;
   font-family: 'Montserrat', helvetica, arial, sans-serif;
 }
-
+/*estilo para el contenedor de las orbitas*/
 .container {
   position: relative;
   display: block;
@@ -19,6 +19,7 @@ html, body {
   margin: auto;
   z-index: 100;
 }
+/*estilo para la linea de orbitas*/
 .container .menu {
   position: fixed;
   width: 100%;
@@ -27,13 +28,14 @@ html, body {
   background: white;
   display: none;
 }
-
+/*estilo para de la orbita general*/
 .container .content {
   position: relative;
   width: 100%;
   height: 73vh;
   text-align: center;
 }
+/*estilo para el nombre de la orbita*/
 .container .content .title {
   font-weight: 300;
   font-size: 5.8vh;
@@ -43,37 +45,45 @@ html, body {
   padding-top: 6vh;
   opacity: 0;
 }
+/*estilo para el nombre y tipo de letra de la orbita*/
 .container .content .title .letter {
   display: inline-block;
   line-height: 1em;
   opacity: 0;
 }
+/*estilo para la posicion de los botones*/
 .container .bottom {
   position: absolute;
   bottom: 0;
   width: 100%;
   height: 28vh;
 }
+/*estilo para la posicion de los botones*/
 .container .bottom .nav {
   width: 100%;
   height: 40px;
   padding-top: 15px;
 }
+/*estilo para la posicion de los botones*/
 .container .bottom .nav span {
   color: #999;
   cursor: pointer;
 }
+/*estilo para la posicion de los botones*/
 .container .bottom .nav span i {
   font-size: 40px;
   font-weight: 200;
 }
+/*estilo del boton izquierdo*/
 .container .bottom .nav span:nth-child(1) {
   padding-left: 10vmin;
 }
+/*estilo del boton derecho*/
 .container .bottom .nav span:nth-child(2) {
   padding-right: 10vmin;
   float: right;
 }
+/*estilo para las orbitas*/
 .container .bottom .orbit {
   position: absolute;
   top: 5vh;
@@ -85,6 +95,7 @@ html, body {
   left: 0;
   right: 0;
 }
+/*estilo para las orbitas y transicion*/
 .container .bottom .orbit .planet_container {
   width: 100%;
   height: 100%;
@@ -93,6 +104,7 @@ html, body {
   transition: transform 0.7s ease-in;
   transition: transform 0.7s ease-in, -webkit-transform 0.7s ease-in;
 }
+/*estilo para de la orbita general y transicion*/
 .container .bottom .orbit .planet_container .planet {
   position: absolute;
   border-radius: 50%;
@@ -103,6 +115,7 @@ html, body {
   transition: transform 0.4s linear, -webkit-transform 0.4s linear;
   will-change: transform;
 }
+/*estilo para de la orbita general*/
 .container .bottom .orbit .planet_container .pt {
   transition: -webkit-transform 0.4s ease-in;
   transition: transform 0.4s ease-in;
@@ -111,6 +124,7 @@ html, body {
           transform: scale(5);
   will-change: transform;
 }
+/*estilo para de la orbita 1*/
 .container .bottom .orbit .planet_container .earth {
   background: blue;
   top: -2.5vmin;
@@ -118,21 +132,25 @@ html, body {
   right: 0;
   margin: auto;
 }
+/*estilo para de la orbita 2*/
 .container .bottom .orbit .planet_container .mars {
   background: blue;
   right: 12vmin;
   top: 12vmin;
 }
+/*estilo para de la orbita 3*/
 .container .bottom .orbit .planet_container .jupiter {
   background: blue;
   right: -2.5vmin;
   bottom: 46.5vmin;
 }
+/*estilo para de la orbita 4*/
 .container .bottom .orbit .planet_container .saturn {
   background: blue;
   right: 12vmin;
   bottom: 12vmin;
 }
+/*estilo para de la orbita 5*/
 .container .bottom .orbit .planet_container .uranus {
   background: blue;
   right: 0;
@@ -140,21 +158,25 @@ html, body {
   margin: auto;
   bottom: -2.5vmin;
 }
+/*estilo para de la orbita 6*/
 .container .bottom .orbit .planet_container .neptune {
   background: blue;
   left: 12vmin;
   bottom: 12vmin;
 }
+/*estilo para de la orbita 7*/
 .container .bottom .orbit .planet_container .mercury {
   background: blue;
   left: -2.5vmin;
   bottom: 46.5vmin;
 }
+/*estilo para de la orbita 8*/
 .container .bottom .orbit .planet_container .venus {
   background: blue;
   left: 12vmin;
   top: 12vmin;
 }
+/*estilo para el nombre de la orbita 1*/
 .container .bottom .orbit .name_container {
   position: absolute;
   display: flex;
@@ -168,6 +190,7 @@ html, body {
   justify-content: center;
   flex-wrap: wrap;
 }
+/*estilo para el orden de la transicion de la orbita 1*/
 .container .bottom .orbit .name_container .more {
   width: 100%;
   padding: 8px 0;
@@ -180,6 +203,7 @@ html, body {
   color: #888;
   transition: color 0.3s;
 }
+/*transformacion del nombre de la orbita 1*/
 .container .bottom .orbit .name_container .pn {
   font-size: 25px;
   color: #666;
